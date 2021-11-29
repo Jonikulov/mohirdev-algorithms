@@ -1,2 +1,1 @@
-# mohirdev-algorithms
-My solutions to Data Structures and Algorithms course problems
+# Data Structures and Algorithms
