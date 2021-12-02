@@ -2,11 +2,11 @@
 
 myList = [1,3,4,6,7,8,10,12,23,45,56,78,99]
 
-def linearSearch(given_list,num):
+def linearSearch(given_list,item):
     index = 0
     result = None
     for i in given_list:
-        if i==num:
+        if i==item:
             result = index
             break
         index += 1
