@@ -1,3 +1,13 @@
+# Making To-Do list with Linked Lists
+"""
+Sample To-Do List:
+- Work-out
+- Reading
+- Classes
+- Cycling
+- Courses
+- Practice coding
+"""
 
 from linkedLists import Node, LinkedList
 
