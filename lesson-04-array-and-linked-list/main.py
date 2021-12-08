@@ -1,4 +1,4 @@
-# Making To-Do list with Linked Lists
+# Making To-Do list with Singly Linked Lists
 """
 Sample To-Do List:
 - Work-out
