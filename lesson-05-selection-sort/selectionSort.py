@@ -14,5 +14,5 @@ def selectionSort(array):
     return sorted_list
 
 
-list1 = [3, 41, 999, 5, 132,33,33,33, 6, 7, 8, 9, 34, 367, 92, 821, 281]
+list1 = [3, 41, 999, 5, 132, 33, 33, 33, 6, 7, 8, 9, 34, 367, 92, 821, 281]
 print(selectionSort(list1))
