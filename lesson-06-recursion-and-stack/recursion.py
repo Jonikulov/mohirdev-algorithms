@@ -10,7 +10,7 @@ print(facto(5))
 
 # N factorial with recursion
 def factorial(N):
-    if N>1:
+    if N>0:
         return N*factorial(N-1)
     else:
         return 1
