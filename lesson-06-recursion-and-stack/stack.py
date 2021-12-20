@@ -4,6 +4,13 @@ class Stack:
         # assigning how many spaces the stack's going to take
         self.place = place
 
+    def isEmpty(self):
+        """checking if the stack is empty"""
+        if self.stack:
+            return False
+        else:
+            return True
+
     def push(self,data):
         """adding element"""
         if self.place!=0:
@@ -15,18 +22,14 @@ class Stack:
 
     def pop(self,item):
         """pop out the element"""
-        for i in range(len(self.stack)):
-            if item==self.stack[i]:
-                # one element pulled out -> one empty space
-                self.place += 1
-                return self.stack.pop(i)
-
-    def isEmpty(self):
-        """checking if the stack is empty"""
-        if self.stack:
-            return False
+        if self.isEmpty():
+            return "The stack is empty."
         else:
-            return True
+            for i in range(len(self.stack)):
+                if item==self.stack[i]:
+                    # one element pulled out -> one empty space
+                    self.place += 1
+                    return self.stack.pop(i)
 
     def isFull(self):
         """checking if the stack is full"""
@@ -37,7 +40,10 @@ class Stack:
 
     def peek(self):
         """showing the last added item in stack"""
-        return self.stack[0]
+        if self.isEmpty():
+            return "The stack is empty."
+        else:
+            return self.stack[0]
 
 obj1 = Stack(5)
 
@@ -45,4 +51,4 @@ obj1.push(1)
 obj1.push(2)
 obj1.push(3)
 
-print(obj1.peek())
+print("Last element:", obj1.peek())
