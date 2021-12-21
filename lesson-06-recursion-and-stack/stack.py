@@ -14,7 +14,7 @@ class Stack:
     def push(self,data):
         """adding element"""
         if self.place!=0:
-            self.stack.insert(0,data)
+            self.stack.append(data)
             # one element added -> one space filled
             self.place -= 1
         else:
@@ -43,12 +43,15 @@ class Stack:
         if self.isEmpty():
             return "The stack is empty."
         else:
-            return self.stack[0]
+            return self.stack[-1]
 
-obj1 = Stack(5)
+obj1 = Stack(3)
+
+print(obj1.isEmpty())
 
 obj1.push(1)
 obj1.push(2)
 obj1.push(3)
 
+print(obj1.isFull())
 print("Last element:", obj1.peek())
