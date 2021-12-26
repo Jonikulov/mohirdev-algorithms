@@ -1,11 +1,8 @@
+# answer with recursion
 def sum_array(array):
-    index = 0
-    if array[index]!=array[-1]:
-        return array[index+1]+sum_array(array[index+1:])
-        # index += 1
-    #     pass
-    # else:
-
+    if array == []:
+        return 0
+    return array[0]+sum_array(array[1:])
 
 array = [5, 8, 12, 22]
 print(sum_array(array))
