@@ -12,19 +12,19 @@ def max_array(array):
         A = max_array(array[1:])
         return A if A > array[0] else array[0]
 
-def binary_search_recursive(arr, elem, start=0, end=None):
-    if end == None:
-        end = len(arr) - 1
-    if start > end:
+def binary_search_recursive(arr, elem, low=0, high=None):
+    if high == None:
+        high = len(arr) - 1
+    if low > high:
         return None
 
-    mid = (start + end) // 2
+    mid = (low + high) // 2
     if elem == arr[mid]:
         return mid
     if elem < arr[mid]:
-        return binary_search_recursive(arr, elem, start, mid-1)
+        return binary_search_recursive(arr, elem, low, mid-1)
     # elem > arr[mid]
-    return binary_search_recursive(arr, elem, mid+1, end)
+    return binary_search_recursive(arr, elem, mid+1, high)
 
 
 array = [2,4,5,6,8,9,10,11,12,15,25,37,40]
