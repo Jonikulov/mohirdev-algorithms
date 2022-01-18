@@ -24,7 +24,7 @@ class Queue:
         return self.queue.pop(index)
 
     def popleft(self):
-        """removes the first element"""
+        """removes the first element of queue"""
         return self.queue.pop(0)
 
     def remove(self,element):
