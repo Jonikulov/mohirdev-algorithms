@@ -1,5 +1,6 @@
-# calculating n factorial
+# non-recursive
 def facto(n):
+    """calculating n factorial"""
     i=1
     while n>1:
         i = i*n
@@ -8,8 +9,10 @@ def facto(n):
 
 print(facto(5))
 
-# N factorial with recursion
+
+# recursive
 def factorial(N):
+    """N factorial with recursion"""
     if N>1:
         return N*factorial(N-1)
     else:

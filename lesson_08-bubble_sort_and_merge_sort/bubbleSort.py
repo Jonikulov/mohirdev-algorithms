@@ -5,7 +5,6 @@ def bubbleSort(arr):
             if arr[i]>arr[i+1]:
                 arr[i], arr[i+1] = arr[i+1], arr[i]
 
-
 # array = [34, 25, 20, 5, 44]
 array = [100, 25, 90, 409, 367, -14, 0, -89, 900]
 
